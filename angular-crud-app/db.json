@@ -22,14 +22,14 @@
       "firstName": "Brinn",
       "lastName": "Jephcote",
       "email": "bjephcote0@archive.org",
-      "age":23
+      "age": 23
     },
     {
-      "id": 2,
       "firstName": "Kenneth",
       "lastName": "MacElholm",
       "email": "kmacelholm1@sina.com.cn",
-      "age":26
+      "age": 27,
+      "id": 2
     }
   ]
 }

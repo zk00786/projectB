@@ -21,9 +21,11 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BoldPipe } from './core/bold.pipe';
+import { CustomSnackBar } from './core/custom-snackbar.component';
 
 @NgModule({
-  declarations: [AppComponent, EmpAddEditComponent],
+  declarations: [AppComponent, EmpAddEditComponent, BoldPipe, CustomSnackBar],
   imports: [
     BrowserModule,
     AppRoutingModule,

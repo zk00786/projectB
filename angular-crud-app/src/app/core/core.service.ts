@@ -1,16 +1,23 @@
 import { Injectable } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
+import { CustomSnackBar } from '../core/custom-snackbar.component';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CoreService {
+  configSuccess: MatSnackBarConfig = {
+    panelClass: 'success-snackbar',
+    duration: 10000,
+    horizontalPosition: 'center',
+    verticalPosition: 'top'
+  };
   constructor(private _snackBar: MatSnackBar) {}
 
-  openSnackBar(message: string, action: string = 'ok') {
-    this._snackBar.open(message, action, {
-      duration: 1000,
-      verticalPosition: 'top',
+  openSnackBarCustom(message: any) {
+    this._snackBar.openFromComponent(CustomSnackBar, {
+      data: message,
+      ...this.configSuccess
     });
   }
 }

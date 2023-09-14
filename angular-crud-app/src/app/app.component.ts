@@ -13,6 +13,7 @@ import { CoreService } from './core/core.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
+  sentence: string = 'this is * strong * and this is also * powerful *';
   displayedColumns: string[] = [
     'id',
     'firstName',
@@ -70,7 +71,7 @@ export class AppComponent implements OnInit {
   deleteEmployee(id: number) {
     this._empService.deleteEmployee(id).subscribe({
       next: (res) => {
-        this._coreService.openSnackBar('Employee deleted!', 'done');
+        this._coreService.openSnackBarCustom('Employee deleted!');
         this.getEmployeeList();
       },
       error: console.log,
