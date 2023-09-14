@@ -13,7 +13,7 @@ import { CoreService } from './core/core.service';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  sentence: string = 'this is * strong * and this is also * powerful *';
+  sentence: string = 'this is * employee management system *';
   displayedColumns: string[] = [
     'id',
     'firstName',
