@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "Users": [
+    {
+      "id": "1",
+      "Name": "John",
+      "Age": "1"
+    },
+    {
+      "Name": "aaa",
+      "Age": 11,
+      "id": "O4N4DJ1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
